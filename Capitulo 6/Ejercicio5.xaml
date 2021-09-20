@@ -1,0 +1,24 @@
+﻿<Window x:Class="Capitulo6_7WPF.Capitulo_6.Ejercicio5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Capitulo6_7WPF.Capitulo_6"
+        mc:Ignorable="d"
+        Title="Ejercicio 5" Height="400" Width="500">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Numero"></Label>
+                <TextBox x:Name="numeroTextBox" Height="18" Width="80"></TextBox>
+                <Button Content=" Agregar " x:Name="agregarButton" Margin="10,0,0,0" Click="agregarButton_Click"></Button>
+                <Button Content="Imprimir" x:Name="imprimirTextBox" Margin="10,0,0,0" Click="imprimirTextBox_Click"></Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <ListBox x:Name="arregloListBox" Height="200" Width="200"></ListBox>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>
